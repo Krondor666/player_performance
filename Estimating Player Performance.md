@@ -92,7 +92,7 @@ In its existence a RNN 'knows' 3 things:
 * 2: What it is trying to optimize
 * 3: That it is an RNN (it's architecture)
 
-Using these three things it gives us some forecast of what is going to happen as: output.  RNN's are like classical neural networks in the fact that they learn 'weights': weights act as a way to classify what features of data is considered important in order minimize the difference between reality and what it produces as output. What differentiates RNN's from classical neural networks is that this output is a forecast of the next point in a time-series and that these weights are dependent on each other over time.
+Using these three things it gives us some forecast of what is going to happen as: output.  RNN's are like classical neural networks in the fact that they learn : weights act as a way to learn the functional form of features from our data data. Learning these features allow the net to be able to describe complex situations, acting as to minimize the difference between what it anticipates and reality. What differentiates RNN's from classical neural networks is that this output is a forecast of the next point in a time-series and that these weights are dependent on each other over time.
 
 Put simply: RNN's learn the *best* features of data and they have memory. This is perfect for our situation- it can learn features of a game that enable it to predict the performance of a player and it can recall previous games to enhance it's ability to do this. So why do we prefer LSTM to RNN? 
 
